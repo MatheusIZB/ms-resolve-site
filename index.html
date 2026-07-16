@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B1F4D">
+<title>MS Resolve — Desentupimentos e limpeza de sofás e colchões na Grande Lisboa</title>
+<meta name="description" content="Desentupimentos e higienização profunda de sofás e colchões na Grande Lisboa. Preço fechado antes de começar, fotos antes/depois de cada trabalho. Fala com o Matheus: 932 966 085.">
+<link rel="canonical" href="https://msresolve.pt/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="MS Resolve — Está resolvido.">
+<meta property="og:description" content="Desentupimentos e limpeza profunda de sofás e colchões na Grande Lisboa. Preço fechado antes de começar.">
+<meta property="og:image" content="https://msresolve.pt/img/og.jpg">
+<meta property="og:url" content="https://msresolve.pt/">
+<link rel="icon" href="logo/simbolo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css">
+<link rel="preload" as="image" href="img/sofa-metade.webp" fetchpriority="high">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "Plumber"],
+  "name": "MS Resolve",
+  "description": "Desentupimentos, canalização e higienização profunda de sofás e colchões na Grande Lisboa.",
+  "url": "https://msresolve.pt/",
+  "telephone": "+351932966085",
+  "priceRange": "€€",
+  "image": "https://msresolve.pt/img/og.jpg",
+  "founder": { "@type": "Person", "name": "Matheus" },
+  "areaServed": [
+    { "@type": "City", "name": "Lisboa" }, { "@type": "City", "name": "Amadora" },
+    { "@type": "City", "name": "Oeiras" }, { "@type": "City", "name": "Sintra" },
+    { "@type": "City", "name": "Loures" }, { "@type": "City", "name": "Almada" }
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "08:00", "closes": "23:00"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog", "name": "Serviços",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpeza e higienização de sofás" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpeza e higienização de colchões" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desentupimento de canos, esgotos e sanitas" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Canalização e reparação de fugas" } }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Quanto tempo demora a secar?", "acceptedAnswer": { "@type": "Answer", "text": "Podes voltar a sentar-te ao fim de 4 a 6 horas. Deixo as janelas do teu lado da casa a arejar antes de sair." } },
+    { "@type": "Question", "name": "E se a mancha não sair?", "acceptedAnswer": { "@type": "Answer", "text": "Digo-te à cabeça se acho que sai. Se não sair, não pagas essa parte." } },
+    { "@type": "Question", "name": "Os produtos são seguros para bebés e animais?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. E não deixo cheiro a químico — deixo cheiro a nada, que é o que uma casa limpa cheira." } },
+    { "@type": "Question", "name": "Vão partir azulejos para desentupir?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Entro pelo ralo ou pela sanita, com máquina. Se for preciso obra, paro e digo-te — não decido isso sozinho." } },
+    { "@type": "Question", "name": "E se não desentupir?", "acceptedAnswer": { "@type": "Answer", "text": "Só pagas a deslocação. O resto não cobro." } }
+  ]
+}
+</script>
+<style>
+/* ============================================================
+   MS RESOLVE — direção "Relatório de Campo"
+   A fotografia é estrutura. O lima é o marcador forense.
+   ============================================================ */
+:root{
+  --blue:#1A56F0; --navy:#0B1F4D; --navy-2:#071331; --sky:#E8F0FF;
+  --lime:#C4F24C; --lime-d:#A9DC2E; --coral:#FF5A3C;
+  --white:#fff; --off:#F6F8FC; --mist:#E3E8F0; --slate:#5B6472; --graphite:#141A24;
+
+  --fd:'Archivo','Segoe UI',system-ui,sans-serif;
+  --fb:'Inter','Segoe UI',system-ui,sans-serif;
+  --fm:ui-monospace,'Cascadia Code','Consolas',monospace;
+
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px; --s7:96px;
+  --sec:clamp(64px,5vw+40px,120px);
+  --maxw:1200px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--off);color:var(--graphite);
+  font-family:var(--fb);font-size:1.0625rem;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:calc(68px + env(safe-area-inset-bottom));
+}
+@media(min-width:860px){ body{padding-bottom:0;} }
+/* grão de película sobre a página inteira — mata o look "flat digital" */
+body::after{
+  content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
+  opacity:.05;mix-blend-mode:soft-light;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--s3);}
+h1,h2,h3{font-family:var(--fd);font-weight:800;letter-spacing:-.04em;line-height:.95;margin:0;text-wrap:balance;}
+p{margin:0;}
+img{max-width:100%;display:block;}
+[id]{scroll-margin-top:88px;}
+
+/* eyebrow em mono = a camada "relatório" */
+.eye{font-family:var(--fm);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500;}
+.eye.on-dark{color:#8FA6CF;}
+
+:where(a,button,summary,input,select,textarea):focus-visible{
+  outline:3px solid var(--lime);outline-offset:2px;box-shadow:0 0 0 6px var(--navy);border-radius:6px;
+}
+a{color:inherit;text-decoration:none;}
+
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--fd);font-weight:700;font-size:1.02rem;line-height:1;
+  border:none;border-radius:999px;padding:18px 26px;min-height:56px;cursor:pointer;
+  transition:transform .18s var(--ease),background .18s var(--ease);
+}
+.btn:active{transform:scale(.985);}
+.btn svg{width:20px;height:20px;flex:0 0 auto;}
+.btn-lime{background:var(--lime);color:var(--navy);}      /* primário — 12.3:1 */
+.btn-lime:hover{background:var(--lime-d);}
+.btn-coral{background:var(--coral);color:#fff;}
+.btn-navy{background:var(--navy);color:#fff;}
+.btn-out{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45);}
+.btn-out:hover{border-color:#fff;}
+
+/* ---------- 00 · barra utilitária ---------- */
+.util{background:var(--navy-2);color:#C3D3F2;font-size:.82rem;}
+.util-in{display:flex;align-items:center;justify-content:space-between;gap:var(--s2);min-height:34px;flex-wrap:wrap;}
+.util .live{display:flex;align-items:center;gap:8px;font-family:var(--fm);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--coral);flex:0 0 auto;animation:pulse 2.2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.util a{font-family:var(--fd);font-weight:700;color:#fff;}
+.util a:hover{color:var(--lime);}
+
+/* ---------- topbar ---------- */
+.top{position:sticky;top:0;z-index:60;background:rgba(246,248,252,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--mist);}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:64px;gap:var(--s2);}
+.top .logo{display:flex;align-items:center;gap:11px;text-decoration:none;}
+.top .logo img{height:36px;width:auto;}
+.logo-wm{font-family:var(--fd);font-weight:800;font-size:1.24rem;letter-spacing:-.03em;color:#22376A;line-height:1;}
+.logo-wm b{color:#3D9BD8;font-weight:800;}
+.top .btn{padding:12px 20px;min-height:44px;font-size:.92rem;}
+
+/* ---------- 01 · HERO (55/45, assimétrico) ---------- */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;}
+.hero-in{position:relative;display:grid;grid-template-columns:1fr;}
+@media(min-width:960px){ .hero-in{grid-template-columns:55fr 45fr;align-items:center;} }
+.hero-txt{position:relative;z-index:3;padding:var(--s6) var(--s3) var(--s7);max-width:calc(var(--maxw)*.55);margin-left:auto;width:100%;}
+@media(min-width:960px){ .hero-txt{padding:var(--s7) var(--s5) var(--s7) var(--s3);} }
+.hero h1{font-size:clamp(2.6rem,1.6rem+5.4vw,5.6rem);margin:var(--s3) 0 var(--s3);}
+.hero h1 .res{color:var(--lime);display:block;}
+.hero h1 .pt{font-size:1.4em;line-height:0;color:var(--lime);}
+.hero .sub{color:#C3D3F2;font-size:1.12rem;max-width:44ch;}
+.hero .ctas{display:flex;flex-direction:column;gap:12px;margin-top:var(--s4);}
+@media(min-width:560px){ .hero .ctas{flex-direction:row;flex-wrap:wrap;} }
+.hero .ctas .btn{flex:1 1 auto;}
+.trust{list-style:none;margin:var(--s4) 0 0;padding:0;display:grid;gap:10px;}
+@media(min-width:640px){ .trust{grid-template-columns:1fr 1fr;} }
+.trust li{display:flex;align-items:flex-start;gap:9px;font-size:.94rem;color:#D7E2F7;}
+.trust svg{width:18px;height:18px;color:var(--lime);flex:0 0 auto;margin-top:2px;}
+
+/* foto do hero: sangra, com a linha de corte lima */
+.hero-fig{position:relative;min-height:300px;}
+@media(min-width:960px){ .hero-fig{position:absolute;inset:0 0 0 55%;min-height:100%;} }
+.hero-fig img{width:100%;height:100%;object-fit:cover;}
+.hero-fig::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(178deg,rgba(7,19,49,.55) 0%,rgba(7,19,49,.20) 40%,rgba(7,19,49,.72) 100%);
+}
+@media(min-width:960px){
+  .hero-fig::after{background:linear-gradient(90deg,rgba(11,31,77,.98) 0%,rgba(11,31,77,.35) 32%,rgba(11,31,77,.12) 100%);}
+}
+/* a foto já tem a divisória real — uma linha desenhada por cima nunca alinha e lê-se como bug.
+   Em vez disso, uma legenda de relatório. */
+.hero-cap{
+  position:absolute;left:var(--s3);bottom:var(--s3);z-index:3;
+  font-family:var(--fm);font-size:.72rem;letter-spacing:.06em;color:#D7E2F7;
+  background:rgba(7,19,49,.72);backdrop-filter:blur(6px);
+  border-left:3px solid var(--lime);padding:8px 12px;
+}
+.hero-cap strong{color:var(--lime);font-weight:700;}
+
+/* ---------- 02 · A PROVA (full-bleed navy) ---------- */
+.prova{background:var(--navy);color:#fff;padding:var(--sec) 0;}
+.prova h2{font-size:clamp(2rem,1.4rem+2.4vw,3.2rem);margin:12px 0 10px;}
+.prova .lead{color:#B9CAEA;max-width:52ch;}
+.provas{display:grid;gap:var(--s5);margin-top:var(--s5);}
+@media(min-width:900px){ .provas{grid-template-columns:1fr 1fr;} }
+.ba{position:relative;aspect-ratio:4/3;border-radius:4px;overflow:hidden;touch-action:pan-y;cursor:ew-resize;user-select:none;background:#0E2350;}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.ba .before{clip-path:inset(0 50% 0 0);}
+.ba .bar{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--lime);transform:translateX(-50%);z-index:3;}
+.ba .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--lime);color:var(--navy);display:grid;place-items:center;z-index:4;box-shadow:0 6px 20px rgba(0,0,0,.4);}
+.ba .knob svg{width:22px;height:22px;}
+.ba .tag{position:absolute;top:12px;z-index:5;font-family:var(--fd);font-weight:800;font-size:.66rem;letter-spacing:.12em;padding:5px 11px;border-radius:999px;}
+.ba .tag.b{left:12px;background:rgba(7,19,49,.85);color:#fff;}
+.ba .tag.a{right:12px;background:var(--lime);color:var(--navy);}
+/* a ficha técnica em mono é o que transforma uma foto bonita numa prova */
+.ficha{margin-top:var(--s2);border-top:1px solid #1C3568;font-family:var(--fm);font-size:.74rem;color:#8FA6CF;}
+.ficha div{display:flex;justify-content:space-between;gap:var(--s2);padding:7px 0;border-bottom:1px solid rgba(28,53,104,.5);}
+.ficha span:last-child{color:#EAF1FF;}
+
+/* ---------- 03 · A ÁGUA ---------- */
+.agua{position:relative;min-height:min(72vh,620px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;}
+.agua img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.agua::after{content:"";position:absolute;inset:0;background:linear-gradient(178deg,rgba(7,19,49,.35) 0%,rgba(7,19,49,.62) 45%,rgba(7,19,49,.96) 100%);}
+.agua-in{position:relative;z-index:2;padding:var(--s7) 0 var(--s6);width:100%;}
+.agua h2{font-size:clamp(2rem,1.3rem+3.4vw,3.8rem);max-width:16ch;margin:12px 0 var(--s3);}
+.agua h2 em{font-style:normal;color:var(--lime);}
+.agua p{max-width:46ch;color:#D7E2F7;}
+.agua .btn{margin-top:var(--s4);}
+
+/* ---------- 04 · OS DOIS TRABALHOS (zig-zag) ---------- */
+.trab{padding:var(--sec) 0;}
+.trab h2{font-size:clamp(2rem,1.4rem+2.4vw,3.2rem);margin:12px 0 var(--s5);max-width:18ch;}
+.job{display:grid;gap:var(--s4);align-items:center;position:relative;padding:var(--s4) 0;}
+@media(min-width:860px){
+  .job{grid-template-columns:1fr 1fr;gap:var(--s6);}
+  .job.rev .job-txt{order:2;} .job.rev .job-fig{order:1;}
+}
+.job + .job{border-top:1px solid var(--mist);}
+.job-fig{position:relative;}
+.job-fig img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center;border-radius:4px;}
+/* numeral: vive no texto, alinhado ao eyebrow — atrás da foto saía cortado e lia-se como erro */
+.job-n{
+  display:block;font-family:var(--fd);font-weight:800;font-size:clamp(3.4rem,2rem+3vw,5rem);line-height:.9;
+  color:transparent;-webkit-text-stroke:2px var(--lime-d);margin-bottom:var(--s1);
+}
+/* legenda em mono por baixo da foto: é o que transforma uma imagem bonita numa prova */
+.cap{font-family:var(--fm);font-size:.72rem;letter-spacing:.04em;color:var(--slate);margin-top:10px;}
+.job h3{font-size:clamp(1.6rem,1.2rem+1.6vw,2.3rem);margin:10px 0 var(--s2);}
+.job .eu{font-size:clamp(3rem,2rem+4vw,5rem);color:var(--lime-d);display:block;margin-top:6px;}
+.job p{color:var(--slate);max-width:44ch;}
+.job ul{list-style:none;padding:0;margin:var(--s3) 0 0;display:grid;gap:8px;}
+.job li{display:flex;gap:10px;align-items:flex-start;font-size:.96rem;}
+.job li svg{width:18px;height:18px;color:var(--lime-d);flex:0 0 auto;margin-top:3px;}
+.job .go{display:inline-flex;align-items:center;gap:8px;margin-top:var(--s3);font-family:var(--fd);font-weight:700;color:var(--blue);position:relative;}
+.job .go::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--lime-d);transform:scaleX(0);transform-origin:left;transition:transform .22s var(--ease);}
+.job .go:hover::after{transform:scaleX(1);}
+.job .go svg{width:16px;height:16px;transition:transform .2s var(--ease);}
+.job .go:hover svg{transform:translateX(4px);}
+.tag-urg{display:inline-block;background:var(--coral);color:#fff;font-family:var(--fd);font-weight:800;font-size:.68rem;letter-spacing:.1em;padding:5px 11px;border-radius:999px;}
+
+/* ---------- 05 · PREÇOS (tabela tipográfica) ---------- */
+.precos{background:var(--white);border-top:1px solid var(--mist);border-bottom:1px solid var(--mist);padding:var(--sec) 0;}
+.precos h2{font-size:clamp(2rem,1.4rem+2.4vw,3.2rem);margin:12px 0 10px;}
+.precos .lead{color:var(--slate);}
+.tabela{margin-top:var(--s5);}
+.tabela .lin{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s3);padding:20px 0;border-bottom:1px solid var(--mist);}
+.tabela .lin:first-child{border-top:2px solid var(--navy);}
+.tabela .nm{font-family:var(--fd);font-weight:700;font-size:1.12rem;}
+.tabela .nm small{display:block;font-family:var(--fb);font-weight:400;font-size:.86rem;color:var(--slate);margin-top:3px;}
+.tabela .vl{font-family:var(--fd);font-weight:800;font-size:1.5rem;white-space:nowrap;font-variant-numeric:tabular-nums;}
+.tabela .lin.destaque .vl{color:var(--blue);}
+.tabela .lin.destaque{background:linear-gradient(90deg,rgba(196,242,76,.14),transparent);margin:0 -12px;padding:20px 12px;}
+.precos .nota{margin-top:var(--s4);color:var(--slate);font-size:.92rem;max-width:60ch;border-left:3px solid var(--lime);padding-left:var(--s2);}
+
+/* ---------- 06 · O MATHEUS (40/60 assimétrico) ---------- */
+.eu-sec{padding:var(--sec) 0;}
+.eu-grid{display:grid;gap:var(--s5);align-items:start;}
+@media(min-width:860px){ .eu-grid{grid-template-columns:40fr 60fr;gap:var(--s6);} }
+.eu-fig img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;}
+.eu-fig figcaption{font-family:var(--fm);font-size:.72rem;color:var(--slate);margin-top:10px;letter-spacing:.04em;}
+.eu-sec h2{font-size:clamp(1.9rem,1.3rem+2.2vw,2.9rem);margin:12px 0 var(--s3);max-width:20ch;}
+.eu-sec .txt p + p{margin-top:var(--s2);}
+.eu-sec .txt{color:var(--graphite);}
+.eu-sec .txt strong{font-family:var(--fd);}
+.nao{margin-top:var(--s4);border-left:3px solid var(--coral);padding:4px 0 4px var(--s2);}
+.nao b{font-family:var(--fd);display:block;margin-bottom:6px;}
+.nao p{color:var(--slate);font-size:.96rem;}
+.assina{margin-top:var(--s4);display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.assina .nome{font-family:var(--fd);font-weight:800;font-size:1.1rem;}
+.assina .tel{font-family:var(--fd);font-weight:800;color:var(--blue);}
+.factos{display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--s4);}
+.factos span{font-family:var(--fm);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--slate);border:1px solid var(--mist);border-radius:999px;padding:7px 13px;background:var(--white);}
+
+/* ---------- 07 · MÉTODO (faixa fina) ---------- */
+.metodo{background:var(--navy);color:#fff;padding:var(--s5) 0;position:relative;}
+.metodo::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--lime);}
+.metodo-in{display:grid;gap:var(--s3);}
+@media(min-width:760px){ .metodo-in{grid-template-columns:repeat(3,1fr);gap:var(--s5);} }
+.passo{display:flex;gap:14px;align-items:flex-start;}
+.passo .n{font-family:var(--fm);font-size:.72rem;color:var(--lime);letter-spacing:.1em;padding-top:4px;}
+.passo b{font-family:var(--fd);font-weight:800;font-size:1.18rem;display:block;}
+.passo p{color:#B9CAEA;font-size:.92rem;margin-top:3px;}
+
+/* ---------- 08 · FAQ ---------- */
+.faq{padding:var(--sec) 0;}
+.faq h2{font-size:clamp(2rem,1.4rem+2.4vw,3.2rem);margin:12px 0 var(--s5);}
+.faq details{border-bottom:1px solid var(--mist);}
+.faq details:first-of-type{border-top:2px solid var(--navy);}
+.faq summary{font-family:var(--fd);font-weight:700;font-size:1.1rem;padding:22px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:var(--s3);align-items:center;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"";width:14px;height:14px;flex:0 0 auto;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(45deg);transition:transform .22s var(--ease);}
+.faq details[open] summary::after{transform:rotate(-135deg);}
+.faq details p{padding:0 0 24px;color:var(--slate);max-width:62ch;}
+
+/* ---------- 09 · B2B ---------- */
+.b2b{position:relative;background:var(--navy);color:#fff;padding:var(--sec) 0;overflow:hidden;}
+.b2b::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--lime);z-index:2;}
+.b2b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35;mix-blend-mode:screen;}
+.b2b-in{position:relative;z-index:2;display:grid;gap:var(--s4);align-items:center;}
+@media(min-width:860px){ .b2b-in{grid-template-columns:1.3fr 1fr;gap:var(--s6);} }
+.b2b h2{font-size:clamp(1.8rem,1.3rem+2vw,2.8rem);margin:12px 0 var(--s2);}
+.b2b p{color:#C3D3F2;max-width:48ch;}
+.selo{display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:var(--navy);font-family:var(--fd);font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:7px 13px;border-radius:999px;margin-top:var(--s3);}
+
+/* ---------- 10 · CTA FINAL ---------- */
+.final{background:var(--navy-2);color:#fff;padding:var(--sec) 0;text-align:center;}
+.final h2{font-size:clamp(1.9rem,1.3rem+2.4vw,3rem);max-width:20ch;margin:12px auto var(--s2);}
+.final p{color:#B9CAEA;}
+.final .tel-big{display:inline-block;margin:var(--s5) 0 var(--s2);font-family:var(--fd);font-weight:800;color:var(--lime);
+  font-size:clamp(2.2rem,1.2rem+5vw,5.2rem);letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1;}
+.final .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:var(--s4);}
+
+/* ---------- rodapé ---------- */
+/* prova social real + zonas */
+.confia{background:var(--sky);padding:var(--s5) 0;border-top:1px solid var(--mist);}
+.confia-in{display:grid;gap:var(--s4);align-items:center;}
+@media(min-width:760px){ .confia-in{grid-template-columns:auto 1fr;gap:var(--s6);} }
+.gstars{display:inline-flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--mist);border-radius:14px;padding:16px 22px;box-shadow:var(--shadow);text-decoration:none;}
+.gstars .g{font-family:var(--fd);font-weight:800;font-size:1.7rem;color:#4285F4;}
+.gstars .stk{display:flex;flex-direction:column;color:#F5B301;font-size:1.05rem;letter-spacing:2px;line-height:1.15;}
+.gstars .stk b{color:var(--graphite);font-family:var(--fd);font-size:.9rem;letter-spacing:0;margin-top:2px;}
+.zonas .eye{display:block;margin-bottom:8px;}
+.zonas p{font-family:var(--fd);font-weight:700;color:var(--navy);font-size:clamp(1.05rem,.9rem+.7vw,1.35rem);line-height:1.5;margin:0;}
+footer{background:var(--navy-2);color:#8FA6CF;padding:var(--s5) 0;border-top:1px solid #1C3568;font-size:.85rem;line-height:1.7;}
+footer p{margin:0 0 8px;}
+footer a{text-decoration:underline;text-underline-offset:3px;}
+footer a:hover{color:var(--lime);}
+footer strong{color:#EAF1FF;}
+.foot-nome{font-family:var(--fd);font-size:1rem;margin-bottom:14px !important;}
+.foot-nome strong{color:#fff;}
+.foot-links{margin-top:18px !important;padding-top:16px;border-top:1px solid #1C3568;}
+.ph{background:rgba(255,90,60,.18);color:#FFB4A2;font-family:var(--fm);font-size:.8rem;padding:1px 6px;border-radius:4px;}
+
+/* banner de cookies — "Rejeitar" tem de ter o MESMO peso visual que "Aceitar",
+   senão o consentimento é inválido (e todo o tratamento seguinte é ilícito) */
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--white);
+    border-top:3px solid var(--lime);box-shadow:0 -14px 40px rgba(11,31,77,.20);
+    padding:var(--s3) 0 calc(var(--s3) + env(safe-area-inset-bottom));}
+.ck[hidden]{display:none;}
+.ck-in{max-width:var(--maxw);margin:0 auto;padding:0 var(--s3);display:grid;gap:var(--s3);align-items:center;}
+@media(min-width:820px){ .ck-in{grid-template-columns:1fr auto;gap:var(--s5);} }
+.ck-t{font-family:var(--fd);font-weight:800;font-size:1.05rem;margin:0 0 6px;}
+.ck-d{font-size:.9rem;color:var(--slate);margin:0;max-width:70ch;}
+.ck-b{display:flex;gap:10px;}
+.ck-b .btn{flex:1;padding:14px 22px;min-height:48px;font-size:.95rem;white-space:nowrap;}
+@media(max-width:859px){ body:has(.ck:not([hidden])) .sticky{bottom:auto;display:none;} }
+
+/* ---------- sticky mobile ---------- */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;gap:8px;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.97);backdrop-filter:blur(14px);
+  border-top:3px solid var(--lime);box-shadow:0 -10px 30px rgba(11,31,77,.14);
+}
+.sticky .btn{padding:14px;min-height:52px;font-size:.98rem;}
+.sticky .btn-lime{flex:1;}
+.sticky .btn-coral{flex:1.6;}   /* urgência à direita = polegar dominante */
+@media(min-width:860px){ .sticky{display:none;} }
+
+/* ---------- motion ---------- */
+.js .rv{opacity:0;transform:translateY(10px);}
+.js .rv.in{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease);}
+.js .rv-img{clip-path:inset(100% 0 0 0);transform:scale(1.06);}
+.js .rv-img.in{clip-path:inset(0 0 0 0);transform:scale(1);transition:clip-path .9s var(--ease),transform .9s var(--ease);}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .js .rv,.js .rv.in,.js .rv-img,.js .rv-img.in{opacity:1;transform:none;clip-path:none;transition:none;}
+  .dot{animation:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- sprite de ícones: desenhados, stroke 2px, currentColor -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="i-check" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></g>
+    <g id="i-wa" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.3A10 10 0 1012 2zm0 2a8 8 0 016.9 12l.5 2.8-2.9-.7A8 8 0 1112 4zm-3.4 4.2c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.6.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.2-.5-2.2-1.4-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.3-.1-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4z"/></g>
+    <g id="i-tel" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 005.5 5.5L16 12l4 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 014.5 5.2 2 2 0 016.5 3z"/></g>
+    <g id="i-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></g>
+    <g id="i-drag" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-4 5 4 5M15 7l4 5-4 5"/></g>
+  </defs>
+</svg>
+
+<!-- 00 · barra utilitária: o número está sempre à vista e é selecionável -->
+<div class="util">
+  <div class="wrap util-in">
+    <span class="live"><span class="dot"></span> A atender agora · até às 23h</span>
+    <span>Grande Lisboa · <a href="tel:+351932966085" data-src="util" data-lead="call">932 966 085</a></span>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#topo" aria-label="MS Resolve — início">
+      <img src="logo/simbolo.svg" alt="" width="34" height="37" aria-hidden="true">
+      <span class="logo-wm">MS <b>Resolve</b></span>
+    </a>
+    <nav aria-label="Principal">
+      <a class="btn btn-lime" href="https://wa.me/351932966085?text=Ol%C3%A1%21%20Queria%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-src="topbar" data-lead="wa">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- 01 · HERO -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-fig">
+      <img src="img/sofa-metade.webp" alt="Sofá a meio de uma higienização: metade do tecido já limpo e claro, metade ainda encardido" width="1200" height="900" fetchpriority="high">
+      <figcaption class="hero-cap">O mesmo sofá. <strong>Metade já lavada.</strong></figcaption>
+    </div>
+    <div class="wrap hero-in">
+      <div class="hero-txt">
+        <p class="eye on-dark">Grande Lisboa · Atendo até às 23h · 7 dias</p>
+        <h1 id="h1">Entupiu? Manchou?<span class="res">Está resolvido<span class="pt">.</span></span></h1>
+        <p class="sub">Desentupimentos e higienização profunda de sofás e colchões. Preço fechado antes de começar — e quem atende o telefone é quem vai a tua casa.</p>
+        <div class="ctas">
+          <a class="btn btn-lime" href="https://wa.me/351932966085?text=Ol%C3%A1%21%20Quero%20or%C3%A7amento%20para%20limpeza%20de%20sof%C3%A1%2Fcolch%C3%A3o.%20Zona%3A%20" target="_blank" rel="noopener" data-src="hero" data-lead="wa">
+            <svg aria-hidden="true"><use href="#i-wa"/></svg> Quero limpar o sofá ou o colchão
+          </a>
+          <a class="btn btn-out" href="tel:+351932966085" data-src="hero" data-lead="call">
+            <span class="dot" aria-hidden="true"></span> É urgente — ligar
+          </a>
+        </div>
+        <ul class="trust">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Preço fechado antes de começar</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Fotos antes/depois de cada trabalho</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Se não ficar resolvido, volto</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Falas com o Matheus Souza, não com um call center</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · A PROVA -->
+  <section class="prova" aria-labelledby="h-prova">
+    <div class="wrap">
+      <p class="eye on-dark rv">A prova</p>
+      <h2 id="h-prova" class="rv">Vês o antes. Vês o depois. Decides tu.</h2>
+      <p class="lead rv">Arrasta a linha. São fotos dos meus serviços — não são de banco de imagens.</p>
+
+      <div class="provas">
+        <figure class="rv" style="margin:0">
+          <div class="ba" data-ba>
+            <img class="after" src="img/sofa-depois.webp" alt="Sofá depois da higienização, tecido claro e limpo" width="1120" height="840" loading="lazy" decoding="async">
+            <img class="before" src="img/sofa-antes.webp" alt="Sofá antes da higienização, tecido encardido e manchado" width="1120" height="840" loading="lazy" decoding="async">
+            <span class="tag b">ANTES</span><span class="tag a">DEPOIS</span>
+            <span class="bar"></span>
+            <span class="knob"><svg aria-hidden="true"><use href="#i-drag"/></svg></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do sofá" class="sr" style="position:absolute;opacity:0;pointer-events:none;width:1px;height:1px">
+          </div>
+          <div class="ficha">
+            <div><span>Serviço</span><span>Higienização de estofos</span></div>
+            <div><span>Peça</span><span>Sofá 3 lugares · tecido</span></div>
+            <div><span>Método</span><span>Injeção-extração</span></div>
+            <div><span>Duração</span><span>90 min</span></div>
+          </div>
+        </figure>
+
+        <figure class="rv" style="margin:0">
+          <div class="ba" data-ba>
+            <img class="after" src="img/colchao-depois.webp" alt="Colchão depois da higienização, superfície branca e limpa" width="1120" height="840" loading="lazy" decoding="async">
+            <img class="before" src="img/colchao-antes.webp" alt="Colchão antes da higienização, com manchas e amarelecimento" width="1120" height="840" loading="lazy" decoding="async">
+            <span class="tag b">ANTES</span><span class="tag a">DEPOIS</span>
+            <span class="bar"></span>
+            <span class="knob"><svg aria-hidden="true"><use href="#i-drag"/></svg></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois do colchão" style="position:absolute;opacity:0;pointer-events:none;width:1px;height:1px">
+          </div>
+          <div class="ficha">
+            <div><span>Serviço</span><span>Higienização de colchão</span></div>
+            <div><span>Peça</span><span>Colchão de casal</span></div>
+            <div><span>Método</span><span>Injeção-extração + aspiração</span></div>
+            <div><span>Duração</span><span>60 min</span></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · A ÁGUA -->
+  <section class="agua" aria-labelledby="h-agua">
+    <img src="img/sofa-agua-suja.webp" alt="Depósito da máquina de extração cheio de água castanha e espessa retirada de um sofá" width="1600" height="1200" loading="lazy" decoding="async">
+    <div class="wrap agua-in">
+      <p class="eye on-dark rv">O que está lá dentro</p>
+      <h2 id="h-agua" class="rv">Esta água saiu de <em>um sofá de sala.</em></h2>
+      <p class="rv">Cinco anos sem lavar. Pó, suor, migalhas, pelos — tudo lá dentro, onde a tua família se senta todos os dias. Aspirar não tira isto. Injeção-extração tira.</p>
+      <a class="btn btn-lime rv" href="https://wa.me/351932966085?text=Ol%C3%A1%21%20Quero%20ver%20o%20meu%20antes%20e%20depois.%20Servi%C3%A7o%3A%20limpeza%20de%20sof%C3%A1.%20Zona%3A%20" target="_blank" rel="noopener" data-src="agua" data-lead="wa">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg> Quero ver o meu antes e depois
+      </a>
+    </div>
+  </section>
+
+  <!-- 04 · OS DOIS TRABALHOS -->
+  <section class="trab" aria-labelledby="h-trab">
+    <div class="wrap">
+      <p class="eye rv">O que eu faço</p>
+      <h2 id="h-trab" class="rv">Canos e estofos. Duas coisas — e faço-as bem.</h2>
+
+      <article class="job">
+        <div class="job-txt rv">
+          <span class="job-n" aria-hidden="true">01</span>
+          <p class="eye">Limpeza</p>
+          <h3>O teu sofá parece novo. E está limpo por dentro.</h3>
+          <p>Injeção-extração profissional: entra água quente com produto, sai a sujidade que a aspiração nunca tirou. Sofás, colchões, cadeiras, tapetes e estofos de automóvel.</p>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg> Seco em 4 a 6 horas — voltas a usar no mesmo dia</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg> Produtos seguros para crianças e animais</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg> Digo-te à cabeça se a mancha sai ou não</li>
+          </ul>
+          <a class="go" href="https://wa.me/351932966085?text=Ol%C3%A1%21%20Quero%20or%C3%A7amento%20para%20limpeza%20de%20sof%C3%A1%20de%20___%20lugares.%20Zona%3A%20" target="_blank" rel="noopener" data-src="job-limpeza" data-lead="wa">
+            Pedir orçamento <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+        <figure class="job-fig rv-img" style="margin:0">
+          <img src="img/sofa-extracao.webp" alt="Mãos com luvas a passar a máquina de injeção-extração sobre a almofada de um sofá" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption class="cap">Injeção-extração · a faixa clara é onde a máquina já passou</figcaption>
+        </figure>
+      </article>
+
+      <article class="job rev">
+        <div class="job-txt rv">
+          <span class="job-n" aria-hidden="true">02</span>
+          <span class="tag-urg">Urgência &amp; Canalização</span>
+          <h3 style="margin-top:14px">São 22h. A água está a subir. Quem atende?<span class="eu">Eu.</span></h3>
+          <p>Desentupimento de canos, esgotos, ralos e sanitas — e canalização: fugas, reparações, manutenção. Entro pelo ralo ou pela sanita, com máquina. Sem partir nada.</p>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg> Muitas vezes resolvido no próprio dia</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg> Se for preciso obra, paro e digo-te antes</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg> Se não desentupir, só pagas a deslocação</li>
+          </ul>
+          <a class="go" href="tel:+351932966085" data-src="job-urgencia" data-lead="call">
+            Ligar 932 966 085 <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+        <figure class="job-fig rv-img" style="margin:0">
+          <img src="img/cano-entupido.webp" alt="Lava-loiça de cozinha cheio de água suja e parada por causa de um cano entupido" width="800" height="600" loading="lazy" decoding="async">
+          <figcaption class="cap">Lava-loiça bloqueado · quanto mais esperas, maior o estrago</figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- 05 · PREÇOS -->
+  <section class="precos" aria-labelledby="h-precos">
+    <div class="wrap">
+      <p class="eye rv">Preços</p>
+      <h2 id="h-precos" class="rv">Preço fechado antes de começar. Sempre.</h2>
+      <p class="lead rv">Para não teres de perguntar — é por aqui que anda.</p>
+
+      <div class="tabela rv">
+        <div class="lin"><span class="nm">Sofá 2 lugares<small>Higienização profunda por injeção-extração</small></span><span class="vl">desde 55€</span></div>
+        <div class="lin"><span class="nm">Sofá 3 lugares<small>O mais pedido</small></span><span class="vl">desde 70€</span></div>
+        <div class="lin"><span class="nm">Chaise-longue / sofá de canto<small>Inclui almofadas e encostos</small></span><span class="vl">desde 90€</span></div>
+        <div class="lin"><span class="nm">Colchão de solteiro<small>Ácaros, suor, manchas e odores</small></span><span class="vl">desde 35€</span></div>
+        <div class="lin"><span class="nm">Colchão de casal<small>Ácaros, suor, manchas e odores</small></span><span class="vl">desde 45€</span></div>
+        <div class="lin destaque"><span class="nm">Sofá 3 lugares + colchão de casal<small>No mesmo dia — poupas na deslocação</small></span><span class="vl">100€</span></div>
+        <div class="lin"><span class="nm">Desentupimento<small>Diagnóstico + desobstrução · deslocação incluída no eixo Lisboa/Amadora</small></span><span class="vl">desde 80€</span></div>
+      </div>
+
+      <p class="nota rv">O valor exato é confirmado por WhatsApp antes de eu sair de casa. Se mudar, digo-te antes — nunca depois. Não sou os do panfleto no elevador.</p>
+    </div>
+  </section>
+
+  <!-- 06 · O MATHEUS -->
+  <section class="eu-sec" aria-labelledby="h-eu">
+    <div class="wrap eu-grid">
+      <figure class="eu-fig rv-img" style="margin:0">
+        <img src="img/carrinha-servico.webp" alt="Carrinha de serviço da MS Resolve estacionada numa rua de Lisboa, com o equipamento de limpeza à vista" width="800" height="1000" loading="lazy" decoding="async">
+        <figcaption>Grande Lisboa · a carrinha e o equipamento que entram em tua casa</figcaption>
+      </figure>
+      <div>
+        <p class="eye rv">Quem vai a tua casa</p>
+        <h2 id="h-eu" class="rv">O MS é de Matheus Souza. É o meu nome que está na carrinha.</h2>
+        <div class="txt rv">
+          <p>Chamo-me <strong>Matheus Souza</strong>. Sou eu que atendo o telefone e sou eu que apareço em tua casa — não mando ninguém no meu lugar.</p>
+          <p>Ainda não tenho 200 avaliações. Podia enchê-las de estrelinhas inventadas — muita gente faz. Não vou. O que faço é isto: <strong>fotografo cada trabalho, mostro-te o antes e o depois, e se não ficar resolvido volto sem cobrar.</strong></p>
+          <div class="nao">
+            <b>O que eu não faço</b>
+            <p>Obra nem partir paredes. Limpeza de manutenção semanal. E se o entupimento for na coluna do prédio e não no teu apartamento, digo-te, não te cobro a deslocação e explico-te o que dizer ao condomínio.</p>
+          </div>
+          <div class="assina">
+            <span class="nome">Matheus Souza</span>
+            <span style="color:var(--slate)">fundador da MS Resolve</span>
+            <a class="tel" href="tel:+351932966085" data-src="matheus" data-lead="call">932 966 085</a>
+          </div>
+          <div class="factos">
+            <span>Preço por escrito antes de começar</span>
+            <span>Seguro de responsabilidade civil</span>
+            <span>Lisboa · Loures · Odivelas · Cascais</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · MÉTODO -->
+  <section class="metodo" aria-label="Como funciona">
+    <div class="wrap metodo-in">
+      <div class="passo"><span class="n">01</span><div><b>Falas comigo</b><p>WhatsApp ou telefone. Dizes o problema e a zona.</p></div></div>
+      <div class="passo"><span class="n">02</span><div><b>Preço fechado</b><p>Combino o valor por escrito antes de sair de casa.</p></div></div>
+      <div class="passo"><span class="n">03</span><div><b>Está resolvido</b><p>Vou lá, faço, fotografo, e fica feito.</p></div></div>
+    </div>
+  </section>
+
+  <!-- 08 · FAQ -->
+  <section class="faq" aria-labelledby="h-faq">
+    <div class="wrap">
+      <p class="eye rv">Perguntas que me fazem sempre</p>
+      <h2 id="h-faq" class="rv">O que queres mesmo saber</h2>
+      <div class="rv">
+        <details><summary>Quanto tempo demora a secar?</summary><p>Podes voltar a sentar-te ao fim de 4 a 6 horas. Deixo as janelas do teu lado da casa a arejar antes de sair.</p></details>
+        <details><summary>E se a mancha não sair?</summary><p>Digo-te à cabeça se acho que sai. Se não sair, não pagas essa parte.</p></details>
+        <details><summary>Tens produtos seguros para bebés e animais?</summary><p>Sim. E não deixo cheiro a químico — deixo cheiro a nada, que é o que uma casa limpa cheira.</p></details>
+        <details><summary>Vais partir azulejos para desentupir?</summary><p>Não. Entro pelo ralo ou pela sanita, com máquina. Se for preciso obra, paro e digo-te — não decido isso sozinho.</p></details>
+        <details><summary>E se não desentupir?</summary><p>Só pagas a deslocação. O resto não cobro.</p></details>
+        <details><summary>Quanto custa?</summary><p>Está tudo aqui em cima, na tabela. E o valor exato vai por escrito no WhatsApp antes de eu sair de casa.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · B2B -->
+  <section class="b2b" aria-labelledby="h-b2b">
+    <img src="img/sala-limpa.webp" alt="" aria-hidden="true" width="1600" height="900" loading="lazy" decoding="async">
+    <div class="wrap b2b-in">
+      <div>
+        <p class="eye on-dark">Empresas, condomínios e alojamento local</p>
+        <h2 id="h-b2b">Um parceiro de manutenção que não lhe dá dores de cabeça.</h2>
+        <p>Estofos impecáveis entre check-ins, desentupimentos sem drama e fatura sempre. Hora marcada e cumprida — porque o seu hóspede entra às 15h e isso não se negoceia.</p>
+        <span class="selo">Contrato de manutenção disponível</span>
+      </div>
+      <div>
+        <a class="btn btn-lime" style="width:100%" href="https://wa.me/351932966085?text=Ol%C3%A1%21%20Sou%20gestor%20de%20AL%2Fcondom%C3%ADnio%20e%20queria%20uma%20proposta." target="_blank" rel="noopener" data-src="b2b" data-lead="wa">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg> Pedir proposta
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09b · PROVA + ZONAS -->
+  <section class="confia" aria-label="Avaliações e zonas de serviço">
+    <div class="wrap confia-in">
+      <a class="gstars" href="https://www.google.com/search?q=MS+Resolve+Desentupimentos+Lisboa" target="_blank" rel="noopener" data-src="google-reviews" data-lead="review">
+        <span class="g" aria-hidden="true">G</span>
+        <span class="stk">★★★★★<b>5,0 no Google</b></span>
+      </a>
+      <div class="zonas">
+        <span class="eye">Onde trabalho</span>
+        <p>Lisboa · Loures · Bobadela · Sacavém · Odivelas · Amadora · Sintra · Oeiras · Cascais</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · CTA FINAL -->
+  <section class="final" aria-labelledby="h-final">
+    <div class="wrap">
+      <p class="eye on-dark">Está resolvido</p>
+      <h2 id="h-final">Manda mensagem. A partir daí, o problema é meu.</h2>
+      <p>Grande Lisboa · respondo em minutos · preço fechado antes de começar.</p>
+      <a class="tel-big" href="tel:+351932966085" data-src="final" data-lead="call">932 966 085</a>
+      <div class="ctas">
+        <a class="btn btn-lime" href="https://wa.me/351932966085?text=Ol%C3%A1%21%20Queria%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-src="final" data-lead="wa">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg> Falar por WhatsApp
+        </a>
+        <a class="btn btn-coral" href="tel:+351932966085" data-src="final" data-lead="call">
+          <svg aria-hidden="true"><use href="#i-tel"/></svg> Ligar agora
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="foot-nome"><strong>MS Resolve</strong> — Desentupimentos, Canalização &amp; Limpeza de Estofos</p>
+    <p><span class="ph">[Nome completo]</span>, empresário em nome individual · NIF <span class="ph">[NIF]</span> · Domicílio profissional: Praceta da Fundição 1, Rua da Costa Moreira 9, 2695-045 Bobadela, Loures</p>
+    <p>Contactos: <span class="ph">[geral@msresolve.pt]</span> · <a href="tel:+351932966085" data-src="footer" data-lead="call"><strong>932 966 085</strong></a> (chamada para a rede móvel nacional)</p>
+    <p><strong>Livro de Reclamações:</strong> <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener">www.livroreclamacoes.pt</a> · Entidade de controlo: ASAE, Rua Rodrigo da Fonseca 73, 1269-274 Lisboa</p>
+    <p><strong>Resolução Alternativa de Litígios</strong> (Lei 144/2015): <a href="https://www.centroarbitragemlisboa.pt" target="_blank" rel="noopener">CACCL</a> (concelho de Lisboa) · <a href="https://www.cniacc.pt" target="_blank" rel="noopener">CNIACC</a> (restantes) · <a href="https://www.consumidor.gov.pt" target="_blank" rel="noopener">consumidor.gov.pt</a></p>
+    <p class="foot-links"><a href="privacidade.html">Política de Privacidade</a> · <a href="#" id="abrirCookies">Definições de Cookies</a> · © 2026 MS Resolve</p>
+  </div>
+</footer>
+
+<!-- Banner de cookies: opt-in prévio. O Pixel NÃO dispara antes do "Aceitar". -->
+<div class="ck" id="ck" role="dialog" aria-modal="false" aria-labelledby="ck-t" hidden>
+  <div class="ck-in">
+    <div>
+      <p class="ck-t" id="ck-t">Este site usa cookies</p>
+      <p class="ck-d">Usamos cookies necessários ao funcionamento do site e, com a sua autorização, cookies de estatística e de publicidade (Meta e Google) para medir os nossos anúncios. Pode mudar de ideias a qualquer momento. <a href="privacidade.html">Política de Privacidade</a></p>
+    </div>
+    <div class="ck-b">
+      <button class="btn btn-navy" type="button" id="ckRej">Rejeitar</button>
+      <button class="btn btn-lime" type="button" id="ckAce">Aceitar</button>
+    </div>
+  </div>
+</div>
+
+<div class="sticky">
+  <a class="btn btn-lime" href="https://wa.me/351932966085?text=Ol%C3%A1%21%20Queria%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-src="sticky" data-lead="wa">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp
+  </a>
+  <a class="btn btn-coral" href="tel:+351932966085" data-src="sticky" data-lead="call">
+    <svg aria-hidden="true"><use href="#i-tel"/></svg> Ligar 932 966 085
+  </a>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* --- antes/depois: pointer events (o range invisível travava o scroll no telemóvel) --- */
+document.querySelectorAll('[data-ba]').forEach(function(ba){
+  var before = ba.querySelector('.before'), bar = ba.querySelector('.bar'),
+      knob = ba.querySelector('.knob'), input = ba.querySelector('input');
+  function set(pct){
+    pct = Math.max(0, Math.min(100, pct));
+    before.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
+    bar.style.left = pct + '%'; knob.style.left = pct + '%';
+    if (input) input.value = pct;
+  }
+  function fromEvent(e){
+    var r = ba.getBoundingClientRect();
+    set(((e.clientX - r.left) / r.width) * 100);
+  }
+  var dragging = false;
+  ba.addEventListener('pointerdown', function(e){ dragging = true; ba.setPointerCapture(e.pointerId); fromEvent(e); });
+  ba.addEventListener('pointermove', function(e){ if (dragging) fromEvent(e); });
+  ba.addEventListener('pointerup', function(){ dragging = false; });
+  ba.addEventListener('pointercancel', function(){ dragging = false; });
+  /* teclado: o slider tem de ser operável sem rato */
+  ba.tabIndex = 0;
+  ba.addEventListener('keydown', function(e){
+    var cur = parseFloat(bar.style.left) || 50;
+    if (e.key === 'ArrowLeft') { set(cur - 4); e.preventDefault(); }
+    if (e.key === 'ArrowRight') { set(cur + 4); e.preventDefault(); }
+  });
+});
+
+/* --- reveal ---
+   O conteúdo arranca com opacity:0, por isso qualquer falha aqui esconde a página.
+   Três redes de segurança: sem IntersectionObserver, com reduced-motion, e um
+   timeout que revela tudo de qualquer maneira. Nada fica invisível. */
+var alvos = document.querySelectorAll('.rv,.rv-img');
+function revelarTudo(){ alvos.forEach(function(el){ el.classList.add('in'); }); }
+
+if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  revelarTudo();
+} else {
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e, i){
+      if (e.isIntersecting) {
+        setTimeout(function(){ e.target.classList.add('in'); }, (i % 4) * 60);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: .12, rootMargin: '0px 0px -5% 0px' });
+  alvos.forEach(function(el){ io.observe(el); });
+  setTimeout(revelarTudo, 3000);   // rede de segurança
+}
+
+/* --- tracking: cada clique de lead, com a secção de origem --- */
+document.querySelectorAll('[data-lead]').forEach(function(a){
+  a.addEventListener('click', function(){
+    var tipo = a.dataset.lead, src = a.dataset.src || 'desconhecido';
+    if (window.gtag) gtag('event', 'generate_lead', { method: tipo, section: src });
+    if (window.fbq) fbq('track', 'Contact', { content_name: src, method: tipo });
+  });
+});
+
+/* --- consentimento de cookies (opt-in prévio, ePrivacy + RGPD) ---
+   O Pixel da Meta e o Google Analytics SÓ podem carregar depois do "Aceitar".
+   Carregá-los antes é a infração mais fácil de provar (basta abrir o separador Rede)
+   e a mais sancionada pela CNPD. */
+(function(){
+  var CHAVE = 'msr_consent';
+  var ck = document.getElementById('ck');
+
+  // Consent Mode v2 — arranca tudo NEGADO. Só sobe para "granted" com clique.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = window.gtag || gtag;
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: 'denied', wait_for_update: 500
+  });
+
+  var PIXEL_ID = '805472612057431';   // Ms Resolve Pixel
+  var tagsCarregadas = false;
+  function carregarTags(){
+    if (tagsCarregadas) return; tagsCarregadas = true;
+    // Meta Pixel — só corre APÓS consentimento (ePrivacy + RGPD)
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', PIXEL_ID);
+    fbq('track', 'PageView');
+    // (opcional GA4: colar aqui o gtag.js quando existir Measurement ID)
+  }
+
+  function aceitar(){
+    localStorage.setItem(CHAVE, 'aceite');
+    gtag('consent', 'update', {
+      ad_storage: 'granted', ad_user_data: 'granted',
+      ad_personalization: 'granted', analytics_storage: 'granted'
+    });
+    carregarTags();
+    ck.hidden = true;
+  }
+  function rejeitar(){
+    localStorage.setItem(CHAVE, 'rejeitado');
+    ck.hidden = true;   // nada carrega. O site funciona na mesma.
+  }
+
+  var guardado = localStorage.getItem(CHAVE);
+  if (guardado === 'aceite') { aceitar(); }
+  else if (guardado !== 'rejeitado') { ck.hidden = false; }
+
+  document.getElementById('ckAce').addEventListener('click', aceitar);
+  document.getElementById('ckRej').addEventListener('click', rejeitar);
+  document.getElementById('abrirCookies').addEventListener('click', function(e){
+    e.preventDefault();
+    localStorage.removeItem(CHAVE);
+    ck.hidden = false;
+  });
+})();
+</script>
+</body>
+</html>

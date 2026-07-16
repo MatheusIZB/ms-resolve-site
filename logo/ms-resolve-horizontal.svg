@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" width="640" height="180" role="img" aria-label="MS Resolve — Limpezas e Desentupimentos">
+  <text x="28" y="96"
+        font-family="Archivo, 'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-weight="800" font-size="78" letter-spacing="-3">
+    <tspan fill="#1A56F0">MS</tspan><tspan fill="#0B1F4D"> Resolve</tspan>
+  </text>
+  <circle cx="486" cy="88" r="12" fill="#C4F24C"/>
+  <text x="30" y="142"
+        font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-weight="600" font-size="20" letter-spacing="6" fill="#5B6472">LIMPEZAS &amp; DESENTUPIMENTOS</text>
+</svg>

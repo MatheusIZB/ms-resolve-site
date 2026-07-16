@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="MS Resolve">
+  <rect width="128" height="128" rx="30" fill="#1A56F0"/>
+  <text x="62" y="62" text-anchor="middle" dominant-baseline="central"
+        font-family="Archivo, 'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-weight="800" font-size="58" letter-spacing="-2" fill="#FFFFFF">MS</text>
+  <circle cx="98" cy="94" r="8" fill="#C4F24C"/>
+</svg>

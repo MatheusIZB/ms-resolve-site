@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" width="500" height="100" role="img" aria-label="MS Resolve">
+  <text x="6" y="74"
+        font-family="Archivo, 'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-weight="800" font-size="76" letter-spacing="-3">
+    <tspan fill="#1A56F0">MS</tspan><tspan fill="#0B1F4D"> Resolve</tspan>
+  </text>
+  <circle cx="462" cy="66" r="11" fill="#C4F24C"/>
+</svg>
